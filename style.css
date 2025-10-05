@@ -83,6 +83,7 @@ header{
     background-image: url(images/Circle\ design.svg);
 }
 
+
 /* main section */
 .Popular-Collection>h1{
     margin-left: 50px;
@@ -108,9 +109,12 @@ header{
     margin: 50px;
 }
 .collections-item{
-    border: 1px solid red;
+    border: none;
+    border-radius: 5px;
     width: auto;
     padding: 10px;
+    box-shadow: 0px 0px 2px gray;
+
 }
 .collections-img{
     width: 100%;
@@ -124,11 +128,10 @@ header{
     color: rgb(255, 0, 208);
     border: none;
 
-   position: relative;
+   position: absolute;
    left: 90%;
    margin-top: 10px;
 }
-
 
 /* future section */
 .feautered-section{
@@ -158,6 +161,7 @@ header{
     background-color: rgb(255, 0, 149);
     color: white;
 }
+
 /* footer */
 
 .footer{
@@ -191,3 +195,60 @@ strong{
     width: 50px;
     height: 50px;
 }
+
+@media screen and (max-width:576px) {
+    .nav-container,.nav-links,.nav-link1,.navul,.hero-section,.feautered-section{
+        flex-direction: column;
+    }
+    .tittle{
+        font-size: 50px;
+        font-weight: bold;
+        padding: 5px 20px;
+        text-wrap: nowrap;
+        margin-bottom: 20px;
+        color: rgb(252, 44, 113);
+    }
+    .hero-content1{
+        margin-left: 20px;
+        width: 99%;
+    }
+    .titel-content>h1{
+        font-size: 30px;
+    }
+    .btn1{
+        margin: 10px;
+    }
+    .colabrate{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btn2{
+        width: 100%;
+        left: 0px;
+        margin-top: 0px;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+    }
+    .feautered-section{
+        gap: 10px;
+        position: relative;
+        left: -81px;
+    }
+    .feautered-title{
+        text-wrap: nowrap;
+        font-size: 30px;
+    }
+    .feautered-text{
+        
+    }
+    .feautered-content1>img{
+        width: auto;
+    }
+
+   
+}
+
